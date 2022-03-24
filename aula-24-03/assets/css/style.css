@@ -1,0 +1,28 @@
+/* Outfit Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+}
+

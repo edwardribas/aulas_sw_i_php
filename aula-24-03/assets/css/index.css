@@ -1,0 +1,82 @@
+/* General */
+.form-container{
+    border-radius: 50px;
+    padding: 85px 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.067);
+    width: 95%;
+    background-color: rgb(252, 252, 252);
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: fade .2s ease;
+}
+@keyframes fade {
+    from{
+        opacity: .5;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.title h1{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(44, 44, 44);
+    margin-bottom: 10px;
+}
+.title i{
+    display: inline-flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+    color: antiquewhite;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.122);
+    background-color: rgb(103, 103, 246);
+}
+
+form{
+    width: 95%;
+    max-width: 290px;
+}
+form input{
+    display: block;
+    margin: 20px auto;
+}
+form input[type=text]:focus, form input[type=password]:focus{
+    border: 1px solid rgba(137, 137, 137, 0.122);
+}
+form input[type=text], form input[type=password]{
+    padding: 10px 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: rgb(246, 246, 246);
+    outline: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-size: .85rem;
+    transition: border .2s ease;
+}
+
+form input[type=submit]{
+    padding: 10px 16px;
+    color: white;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 200;
+    background-color: rgb(103, 103, 246);
+    transition: transform .2s ease;
+}
+form input[type=submit]:active{
+    transform: scale(0.9);
+}

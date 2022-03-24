@@ -1,0 +1,138 @@
+/* General */
+body.active{
+    overflow-y: hidden
+}
+button.menuToggler{
+    position: absolute;
+    left: 17px;
+    top: 15px;
+    z-index: 1000;
+
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(106, 106, 255);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+button.menuToggler:active{
+    transform: scale(0.9);
+}
+a:active{
+    color: inherit;
+}
+
+/* Nav */
+nav{
+    position: absolute;
+    z-index: 1000;
+    left: 17px;
+    user-select: none;
+    top: 70px;
+    background-color: rgb(106, 106, 255);
+    padding: 25px 25px;
+    border-radius: 14px;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+nav.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px);
+}
+nav li.nav-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+nav li.nav-info .img{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
+nav li.nav-info .info p{
+    font-size: .9rem;
+    color: white;
+    font-weight: 200;
+}
+nav li.nav-info .info h2{
+    color: white;
+    font-size: 1.1rem;
+}
+nav li.link a{
+    display: block;
+    color: white;
+    font-size: .9rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+    transform: translateX(-11px);
+    padding: 8px 13px;
+    border-radius: 12px 40px 40px 12px;
+    transition: background-color .2s ease;
+}
+nav li.link a:hover{
+    background-color: rgba(255, 255, 255, 0.122);
+}
+nav li.exit-btn{
+    margin-top: 20px;
+}
+nav li.exit-btn a{
+    background-color: white;
+    border-radius: 6px;
+    font-size: .95rem;
+    padding: 4px 16px;
+}
+
+/* Image and Text */
+main{
+    text-align: center;
+    animation: fade .2s;
+}
+@keyframes fade {
+    from{
+        opacity: .5;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+main img{
+    width: 90%;
+    max-width: 200px;
+}
+main p{
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+
+/* Background */
+.back{
+    position: absolute;
+    z-index: 999;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.317);
+    backdrop-filter: blur(7px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease;
+}
+.back.active{
+    opacity: 1;
+    visibility: visible;
+}
