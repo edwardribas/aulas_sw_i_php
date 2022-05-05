@@ -1,0 +1,69 @@
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* General */
+html,body{
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+body{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(30,30,30);
+    color: rgb(220,220,220);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(40,40,40);
+    border: 1px solid rgb(30,30,30);
+    border-radius: 50px;
+}
+
+/* Application */
+p{
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+input{
+    padding: 8px 16px;
+    line-height: 1;
+    background-color: rgb(40,40,40);
+    color: rgb(220,220,220);
+    border: none;
+    border-radius: 5px;
+}
+::-webkit-outer-spin-button, ::-webkit-inner-spin-button{
+    appearance: none;
+}
+button{
+    background-color: rgb(74, 255, 98);
+    color: rgb(40,40,40);
+    padding: 10px 16px;
+    cursor: pointer;
+    line-height: 1;
+    border: none;
+    border-radius: 5px;
+}
