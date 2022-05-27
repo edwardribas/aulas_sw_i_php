@@ -26,11 +26,11 @@
                 if(!empty($number)){
 
                     function makePyramid($number){
-                        $count = 0;
-                        for($i = 0; $i <= $number; $i++){
-                            for($i = 1; $i <= $number; $i++){
-                                echo $count+1;
+                        for($i = 0; $i < $number; $i++){
+                            for($counter = 1; $counter <= $i+1; $counter++){
+                              echo "$counter ";
                             }
+                            echo "<br>";
                         }
                     }
 
