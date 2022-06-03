@@ -22,8 +22,9 @@
                 header('Location: ../.');
             }
 
-            echo "<p>Bem-vindo, " . $_SESSION['valueUsername'] . "!</p>";
+            echo "<p>Olá! Seja bem-vindo, " . $_SESSION['valueUsername'] . "!</p>";
         ?>
+        <p>Para encerrar sua sessão, clique no botão abaixo.</p>
 
         <a href="./logout.php" class="logout">Sair</a>
     </main>

@@ -10,10 +10,12 @@
     <title>frontside | entrar</title>
     <link rel="shortcut icon" href="./assets/img/favicon.svg">
     <link rel="stylesheet" href="./assets/style.css">
+
+    <script src="https://kit.fontawesome.com/932eb47ff0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <img src="./assets/img/logo.svg" alt="Logo do frontside.">
+        <img src="./assets/img/logowhite.svg" alt="Logo do frontside.">
 
         <form action="./pages/validation.php" method="POST">
             <fieldset>
@@ -24,10 +26,13 @@
             <fieldset>
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" placeholder="Digite sua senha">
-            </fieldset>            
+                <i class="fa-solid fa-eye-slash"></i>
+                <span></span>
+            </fieldset>
 
             <input type="submit" value="Login">
         </form>
+        
         <a href="#">Ainda não tem uma conta?</a>
 
         <?php
@@ -40,5 +45,8 @@
         
         ?>
     </main>
+
+    <!-- Application -->
+    <script src="./assets/app.js"></script>
 </body>
 </html>
